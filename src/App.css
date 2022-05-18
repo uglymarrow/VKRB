@@ -1,0 +1,417 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+}
+
+.main-container {
+  position: relative;
+  z-index: 2;
+}
+
+.auth-container {
+  position: relative;
+  z-index: 1;
+  background-color: #FDFCFA;
+  width: 80%;
+  min-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.bg-green {
+  background-color: #299817!important;
+  flex-flow: row nowrap;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.navbar {
+  height: 8vh;
+  padding-left: 0;
+  width: 100%;
+}
+
+.nav-links .nav-link {
+  background: #207A11;
+  border-radius: 20px;
+  margin: 0 10px 0 10px;
+}
+
+.navbar-hungry {
+  display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2em;
+  color: #FDFCFA;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  text-align: center;
+  padding-left: 12px;
+  
+}
+
+
+.navbar-nav {
+  text-align: center;
+}
+
+@media  (max-width: 480px) {
+  .navbar-hungry{
+    display: block;
+    max-width: 170px;
+    font-size: 1.7em;
+  }
+
+ 
+
+  .nav-links .nav-link {
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+  }
+
+}
+
+@media  (max-width:1000px) {
+  .navbar-nav.is-logged{
+    display: none;
+  }
+
+  .navbar {
+    height: 13vh;
+  }
+
+  .navbar-hungry {
+    position: relative;
+
+  }
+}
+
+
+#root {
+  position: relative;
+  background-image: url(meal.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.auth-form {
+  text-align: center;
+  min-height: 600px;
+}
+
+#root::after {
+  content: "";
+  position: absolute;
+  background-color: #0B0A09;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+}
+
+
+.form-group  .green-btn {
+  color: #FDFCFA;
+  background-color: #299817;
+  width: 30%;
+  min-width: 200px;
+  margin-top: 30px;
+  border: 0;
+  font-size: 1.2rem;
+}
+
+.auth-form input {
+  background-color: #D2CFC8;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+}
+
+.green-link {
+  color: #299817;
+}
+
+.hello-container {
+  color: #FDFCFA;
+  font-size: 2em;
+  position: absolute;
+  z-index: 2;
+  width: 80%;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hello-container p {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 90vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-links {
+  margin-left: auto;
+  font-size: 1.6em;
+
+}
+
+.nav-links a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  color: #FDFCFA;
+  display: inline;
+}
+
+.product-list {
+  background-color: #FDFCFA;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  border: 1px solid #BCBBB5;
+}
+
+th {
+  text-align: center;
+  border: 1px solid #BCBBB5; 
+}
+
+h3 {
+  color: #626160;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.tr-green {
+background: rgba(48, 213, 21, 0.1);
+}
+
+.tr-red {
+background: rgba(213, 21, 21, 0.1);
+}
+
+.tr-yellow {
+  background: rgba(213, 205, 21, 0.1);
+}
+
+.tr-black {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.drop-close {
+  display: none;
+}
+
+.drop-open {
+  top: 9vh;
+  background-color: #299817;
+  position: absolute;
+  left: 0;
+  display: block;
+  z-index: 100;
+  margin: 0;
+  width: 20vw;
+  min-width: 200px;
+}
+
+.drop-item {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 140%;
+list-style-type: none;
+
+}
+.drop-links {
+  padding: 0;
+  margin: 0;
+}
+.drop-item a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FDFCFA;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.svg-drop{
+  margin-top: 2.5vh;
+  margin-left: 2vh;
+}
+
+@media (min-width: 1001px) {
+  .svg-drop {
+    display: none;
+  }
+}
+
+.add-product-button {
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+}
+
+.create-lable {
+  display: block;
+  font-family: Roboto;
+  font-style: bold;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 140%;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #299817;
+}
+
+.auth-container label {
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+}
+
+.auth-container h3 {
+  margin-bottom: 1.2rem;
+}
+
+.recipe {
+  border: 1px solid #299817;
+
+}
+
+.recipe td {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 140%;
+  align-items: center;
+  color: #626160;
+}
+
+.recipe-lable {
+  display: inline;
+}
+
+.filter-label {
+  background: #207A11;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  color: #FDFCFA;
+  padding: 10px;
+  max-width: 250px;
+  text-align: center;
+  display:flex;
+  align-items: center;
+}
+
+.recipe-header {
+  padding: 0.7rem;
+}
+
+.recipe-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.account-row {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 140%;
+  color: #626160;
+  text-align: left;
+  margin: 20px;  
+}
+
+.account-row-red {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 140%;
+  color: #FA0808;
+  text-align: left;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.create-name {
+  display: flex;  
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+}
